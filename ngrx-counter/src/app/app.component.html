@@ -1,0 +1,8 @@
+<button (click)="incrementBy12()">Increment by 12</button>
+<button (click)="increment()">Increment</button>
+
+<div>Current Count: {{ (count$ | async)!.value }}</div>
+
+<button (click)="decrement()">Decrement</button>
+
+<button (click)="reset()">Reset Counter</button>

@@ -1,0 +1,13 @@
+<p>user-form works!</p>
+
+
+<form [formGroup]="userForm">
+  <!-- <input formControlName="userName"> -->
+  <app-input-user-name formControlName="userName"></app-input-user-name>
+</form>
+
+<pre>
+{{userForm.value|json}}
+{{userForm.valid|json}}
+
+</pre>
